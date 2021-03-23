@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Савелий Бурков](https://up.htmlacademy.ru/adaptive/22/user/980203).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Артёмов](https://htmlacademy.ru/profile/firefoxic).
 
 ---
 
