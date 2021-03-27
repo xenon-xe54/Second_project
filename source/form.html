@@ -20,14 +20,91 @@
     </nav>
   </header>
   <main class="main-page">
-    <section class="logo">
+    <section class="full-logo">
       <h1 class="visually-hidden">Страница отзыва</h1>
-      <img src="img/inner-logo.svg" alt="Седона" class="main-page__logo-image">
+      <img src="img/inner-logo.svg" alt="Седона" class="full-logo__logo-image">
     </section>
     <p class="main-page__title">Оставьте свой отзыв</p>
     <p class="main-page__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
       достопримечательностях</p>
-
+    <form class="form" action="https://echo.htmlacademy.ru" method="get">
+      <fieldset class="form__part part-form">
+        <legend class="part-form__title">Представьтесь</legend>
+        <ul class="part-form__list">
+          <li class="part-form__item">
+            <label for="tourist-first-name">Имя</label>
+            <input type="text" name="tourist-first-name" id="tourist-first-name" placeholder="Петр" required>
+          </li>
+          <li class="part-form__item">
+            <label for="tourist-last-name">Фамилия</label>
+            <input type="text" name="tourist-last-name" id="tourist-last-name" placeholder="Иванов" required>
+          </li>
+          <li class="part-form__item">
+            <label for="tourist-middle-name">Отчество</label>
+            <input type="text" name="tourist-middle-name" id="tourist-middle-name" placeholder="Александрович">
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="form__part part-form">
+        <legend class="part-form__title">Контактная информация</legend>
+        <ul class="part-form__list">
+          <li class="part-form__item">
+            <label for="mobile-number">Контактный телефон</label>
+            <input type="tel" name="mobile-number" id="mobile-number" placeholder="Введите телефон" required>
+            <button type="button"></button>
+          </li>
+          <li class="part-form__item">
+            <label for="email">Электронная почта</label>
+            <input type="email" name="email" id="email" placeholder="Введите e-mail" required>
+            <button type="button"></button>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="form__part part-form">
+        <legend class="part-form__title">Ваше общеее впечатление</legend>
+        <ul class="part-form__list">
+          <li class="part-form__item">
+            <input type="radio" name="feeling" id="feeling-good" checked>
+            <label for="feeling-good">Скорее положительное</label>
+          </li>
+          <li class="part-form__item">
+            <input type="radio" name="feeling" id="feeling-bad">
+            <label for="feeling-bad">Скорее отрицательное</label>
+          </li>
+          <li class="part-form__item">
+            <input type="radio" name="feeling" id="feeling-so-so">
+            <label for="feeling-so-so">Затрудняюсь ответить</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="form__part part-form">
+        <legend class="part-form__title">Посещённые достопримечательности</legend>
+        <ul class="part-form__list">
+          <li class="part-form__item">
+            <input type="checkbox" name="evil-bridge" id="evil-bridge" checked>
+            <label for="evil-bridge">Мост дьявола</label>
+          </li>
+          <li class="part-form__item">
+            <input type="checkbox" name="mountain-bell" id="mountain-bell" checked>
+            <label for="mountain-bell">Гора-колокол</label>
+          </li>
+          <li class="part-form__item">
+            <input type="checkbox" name="slide-park" id="slide-park" checked>
+            <label for="slide-park">Слайд-парк</label>
+          </li>
+          <li class="part-form__item">
+            <input type="checkbox" name="red-rocks" id="red-rocks">
+            <label for="red-rocks">Красные скалы</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="form__part part-form">
+        <legend class="part-form__title">Опишите свои эмоции:</legend>
+        <textarea name="full-review" id="full-review" cols="26" rows="5"
+          placeholder="Опишите подробно все свои восторги"></textarea>
+      </fieldset>
+      <button class="button" type="submit">Отправить отзыв</button>
+    </form>
   </main>
   <footer class="main-footer">
     <section class="footer-contacts">
