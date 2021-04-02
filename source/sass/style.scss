@@ -1,2 +1,24 @@
-// Начните писать стили здесь
-body { background: rgb(85, 86, 184); }
+@import "blocks/page.scss";
+@import "blocks/page-body.scss";
+@import "blocks/main-header.scss";
+@import "blocks/logo.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/full-logo.scss";
+@import "blocks/main-page.scss";
+@import "blocks/features.scss";
+@import "blocks/features-list.scss";
+@import "blocks/features-item.scss";
+@import "blocks/subfeatures-list.scss";
+@import "blocks/subfeatures-item.scss";
+@import "blocks/search-hotel.scss";
+@import "blocks/location.scss";
+@import "blocks/footer-contacts.scss";
+
+
+.button{
+  text-decoration: none;
+  background-color: hsla(203, 47, 66, 100%);
+  font-weight: 700;
+  color: white;
+  padding: 15px 32px 18px 32px;
+}
