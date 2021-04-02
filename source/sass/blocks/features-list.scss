@@ -1,5 +1,5 @@
 
-.features-list{
+.features-list {
   counter-reset: count;
 }
 
@@ -8,17 +8,20 @@
   position: relative;
   counter-increment: count;
 }
+
 .features-list__item::before {
   content: "— "  counter(count)  " —";
   position: absolute;
   top: 70px;
   left: 140px;
 }
+
 .features-list__item:first-child {
   background-image: url(../img/body-mask.svg);
   background-repeat: no-repeat;
   padding-top: 55px;
 }
+
 .features-list__item:first-child::before {
   top: 90px;
 }
