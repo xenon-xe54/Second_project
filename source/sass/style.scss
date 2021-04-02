@@ -1,5 +1,7 @@
+@import "global/fonts.scss";
+@import "global/a11y-hidden.scss";
 @import "blocks/page.scss";
-@import "blocks/page-body.scss";
+@import "blocks/button.scss";
 @import "blocks/main-header.scss";
 @import "blocks/logo.scss";
 @import "blocks/main-nav.scss";
@@ -13,12 +15,4 @@
 @import "blocks/search-hotel.scss";
 @import "blocks/location.scss";
 @import "blocks/footer-contacts.scss";
-
-
-.button {
-  text-decoration: none;
-  background-color: hsla(203, 47, 66, 100%);
-  font-weight: 700;
-  color: white;
-  padding: 15px 32px 18px 32px;
-}
+@import "blocks/footer-social.scss";
