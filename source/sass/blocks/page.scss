@@ -12,3 +12,8 @@
   width: 320px;
   margin: 0;
 }
+
+.page__a11y-hidden {
+  position: fixed;
+  transform: scale(0);
+}
