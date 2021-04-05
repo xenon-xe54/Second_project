@@ -1,0 +1,10 @@
+.phone-button::before {
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 18px;
+  background-image: url("../../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  top: 22px;
+  right: 15px;
+}

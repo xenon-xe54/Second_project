@@ -26,90 +26,107 @@
     <p class="main-page__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
       достопримечательностях</p>
     <form class="form" action="https://echo.htmlacademy.ru" method="get">
-      <fieldset class="form__part part-form">
-        <legend class="part-form__title">Представьтесь</legend>
-        <ul class="part-form__list">
-          <li class="part-form__item">
-            <label for="tourist-first-name">Имя</label>
-            <input type="text" name="tourist-first-name" id="tourist-first-name" placeholder="Петр" required>
-          </li>
-          <li class="part-form__item">
-            <label for="tourist-last-name">Фамилия</label>
-            <input type="text" name="tourist-last-name" id="tourist-last-name" placeholder="Иванов" required>
-          </li>
-          <li class="part-form__item">
-            <label for="tourist-middle-name">Отчество</label>
-            <input type="text" name="tourist-middle-name" id="tourist-middle-name" placeholder="Александрович">
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset class="form__part part-form">
-        <legend class="part-form__title">Контактная информация</legend>
-        <ul class="part-form__list">
-          <li class="part-form__item">
-            <label for="mobile-number">Контактный телефон</label>
-            <input type="tel" name="mobile-number" id="mobile-number" placeholder="Введите телефон" required>
-            <button type="button"></button>
-          </li>
-          <li class="part-form__item">
-            <label for="email">Электронная почта</label>
-            <input type="email" name="email" id="email" placeholder="Введите e-mail" required>
-            <button type="button"></button>
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset class="form__part part-form">
-        <legend class="part-form__title">Ваше общеее впечатление</legend>
-        <ul class="part-form__list">
-          <li class="part-form__item">
-            <input type="radio" name="feeling" id="feeling-good" checked>
-            <label for="feeling-good">Скорее положительное</label>
-          </li>
-          <li class="part-form__item">
-            <input type="radio" name="feeling" id="feeling-bad">
-            <label for="feeling-bad">Скорее отрицательное</label>
-          </li>
-          <li class="part-form__item">
-            <input type="radio" name="feeling" id="feeling-so-so">
-            <label for="feeling-so-so">Затрудняюсь ответить</label>
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset class="form__part part-form">
-        <legend class="part-form__title">Посещённые достопримечательности</legend>
-        <ul class="part-form__list">
-          <li class="part-form__item">
-            <input type="checkbox" name="attractions" value="evil-bridge" id="evil-bridge" checked>
-            <label for="evil-bridge">Мост дьявола</label>
-          </li>
-          <li class="part-form__item">
-            <input type="checkbox" name="attractions" value="mountain-bell" id="mountain-bell" checked>
-            <label for="mountain-bell">Гора-колокол</label>
-          </li>
-          <li class="part-form__item">
-            <input type="checkbox" name="attractions" value="slide-park" id="slide-park" checked>
-            <label for="slide-park">Слайд-парк</label>
-          </li>
-          <li class="part-form__item">
-            <input type="checkbox" name="attractions" value="red-rocks" id="red-rocks">
-            <label for="red-rocks">Красные скалы</label>
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset class="form__part part-form">
-        <legend class="part-form__title">Опишите свои эмоции:</legend>
-        <textarea name="full-review" id="full-review" cols="26" rows="5"
-          placeholder="Опишите подробно все свои восторги"></textarea>
-      </fieldset>
-      <button class="button" type="submit">Отправить отзыв</button>
+      <div class="form__wrapper">
+        <fieldset class="form__part part-form">
+          <legend class="part-form__title">Представьтесь:</legend>
+          <ul class="part-form__list">
+            <li class="part-form__item part-form__name">
+              <label for="tourist-first-name">Имя*:</label>
+              <input type="text" name="tourist-first-name" id="tourist-first-name" placeholder="Петр" required>
+            </li>
+            <li class="part-form__item part-form__name">
+              <label for="tourist-last-name">Фамилия*:</label>
+              <input type="text" name="tourist-last-name" id="tourist-last-name" placeholder="Иванов" required>
+            </li>
+            <li class="part-form__item part-form__name">
+              <label for="tourist-middle-name">Отчество:</label>
+              <input type="text" name="tourist-middle-name" id="tourist-middle-name" placeholder="Александрович">
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+      <div class="form__wrapper">
+        <fieldset class="form__part part-form">
+          <legend class="part-form__title">Контактная информация:</legend>
+          <ul class="part-form__list">
+            <li class="part-form__item">
+              <label for="mobile-number">Контактный телефон*:</label>
+              <div class="part-form__data">
+                <input type="tel" name="mobile-number" id="mobile-number" placeholder="Введите телефон" required>
+                <button class="part-form__button phone-button button" type="button"></button>
+              </div>
+            </li>
+            <li class="part-form__item">
+              <label for="email">Электронная почта*:</label>
+              <div class="part-form__data">
+                <input type="email" name="email" id="email" placeholder="Введите e-mail" required>
+                <button class="part-form__button mail-button button" type="button"></button>
+              </div>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+      <div class="form__wrapper">
+        <fieldset class="form__part part-form">
+          <legend class="part-form__title">Ваше общеее впечатление:</legend>
+          <ul class="part-form__list">
+            <li class="part-form__item part-form__control-wrapper">
+              <input class="page__a11y-hidden part-form__radio-button" type="radio" name="feeling" id="feeling-good"
+                checked>
+              <label class="part-form__radio-label radio-button" for="feeling-good">Скорее положительное</label>
+            </li>
+            <li class="part-form__item part-form__control-wrapper">
+              <input class="page__a11y-hidden part-form__radio-button" type="radio" name="feeling" id="feeling-bad">
+              <label class="part-form__radio-label radio-button" for="feeling-bad">Скорее отрицательное</label>
+            </li>
+            <li class="part-form__item part-form__control-wrapper">
+              <input class="page__a11y-hidden part-form__radio-button" type="radio" name="feeling" id="feeling-so-so">
+              <label class="part-form__radio-label radio-button" for="feeling-so-so">Затрудняюсь ответить</label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+      <div class="form__wrapper">
+        <fieldset class="form__part part-form">
+          <legend class="part-form__title">Посещённые достопримечательности:</legend>
+          <ul class="part-form__list">
+            <li class="part-form__item part-form__control-wrapper">
+              <input class="page__a11y-hidden part-form__checkbox" type="checkbox" name="attractions"
+                value="evil-bridge" id="evil-bridge" checked>
+              <label class="part-form__checkbox-label checkbox" for="evil-bridge">Мост дьявола</label>
+            </li>
+            <li class="part-form__item part-form__control-wrapper">
+              <input class="page__a11y-hidden part-form__checkbox" type="checkbox" name="attractions"
+                value="mountain-bell" id="mountain-bell" checked>
+              <label class="part-form__checkbox-label checkbox" for="mountain-bell">Гора-колокол</label>
+            </li>
+            <li class="part-form__item part-form__control-wrapper">
+              <input class="page__a11y-hidden part-form__checkbox" type="checkbox" name="attractions" value="slide-park"
+                id="slide-park" checked>
+              <label class="part-form__checkbox-label checkbox" for="slide-park">Слайд-парк</label>
+            </li>
+            <li class="part-form__item part-form__control-wrapper">
+              <input class="page__a11y-hidden part-form__checkbox" type="checkbox" name="attractions" value="red-rocks"
+                id="red-rocks">
+              <label class="part-form__checkbox-label checkbox" for="red-rocks">Красные скалы</label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+      <div class="form__wrapper">
+        <fieldset class="form__part part-form">
+          <legend class="part-form__title">Опишите свои эмоции:</legend>
+          <textarea name="full-review" id="full-review" cols="26" rows="5"
+            placeholder="Опишите подробно все свои восторги"></textarea>
+        </fieldset>
+      </div>
+      <button class="form__button button" type="submit">Отправить отзыв</button>
     </form>
   </main>
   <footer class="main-footer">
     <section class="footer-contacts">
       <h2 class="page__a11y-hidden">Контакты</h2>
-      <div class="footer-contacts__hashtag">
-        <a href="#" class="contact-name">#VISITSEDONA</a>
-      </div>
+      <a class="footer-contacts__hashtag" href="#" class="contact-name">#VISITSEDONA</a>
     </section>
     <section class="footer-social">
       <h2 class="page__a11y-hidden">Седона в социальных сетях</h2>

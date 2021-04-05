@@ -6,3 +6,12 @@
   background-position: 0 332px, 0 0;
   background-repeat: no-repeat;
 }
+
+.full-logo__logo-image {
+  width: 320px;
+  height: 158px;
+  background-image: url("../../img/header-mask.svg"), url("../../img/background-header-inner.jpg");
+  background-color: hsla(203, 47, 66, 100%);
+  background-position: 0 101px, 0 0;
+  background-repeat: no-repeat;
+}
