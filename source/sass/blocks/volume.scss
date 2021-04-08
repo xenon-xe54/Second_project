@@ -1,0 +1,25 @@
+.volume__scale-bar {
+  position: absolute;
+  width: 235px;
+  height: 3px;
+  background-color: hsla(0, 0, 100, 0.2);
+  top: 21px;
+  left: 22px;
+}
+
+.volume__scale-active {
+  width: 20%;
+  height: 100%;
+  background-color: hsla(0, 0, 100, 0.2);
+}
+
+.volume__toggle {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: white;
+  top: -5px;
+  left: 20%;
+}
+

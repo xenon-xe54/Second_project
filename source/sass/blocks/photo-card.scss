@@ -1,0 +1,39 @@
+.photo-card__image {
+  width: 280px;
+  height: 280px;
+  padding-bottom: 9px;
+}
+
+.photo-card__name {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.photo-card__author {
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: none;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.photo-card__likes {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  position: relative;
+  left: 36px;
+}
+
+.photo-card__likes::before {
+  position: absolute;
+  content: "";
+  width: 23px;
+  height: 21px;
+  background-image: url("../../img/icon-like.svg");
+  background-repeat: no-repeat;
+  left: -32px;
+  top: -5px;
+}

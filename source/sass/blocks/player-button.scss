@@ -1,0 +1,22 @@
+.player-button {
+  width: 66px;
+  height: 66px;
+  border: none;
+  background-color: hsla(0, 0, 95, 1);
+  margin: 0;
+  position: absolute;
+  top: 0;
+}
+
+
+.player-button__repeat {
+  left: 0;
+}
+
+.player-button__subtitles {
+  right: 66px;
+}
+
+.player-button__fullscreen {
+  right: 0;
+}
