@@ -11,6 +11,26 @@
   height: 100%;
   width: 320px;
   margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content 1fr min-content;
+}
+
+@media (min-width: 768px) {
+  .page__body {
+    width: 768px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page__body {
+    width: 1200px;
+  }
+}
+
+
+.page__wrapper {
+  margin: 0 auto;
 }
 
 .page__a11y-hidden {
