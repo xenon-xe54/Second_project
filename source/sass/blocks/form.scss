@@ -11,3 +11,20 @@
   font-size: 21px;
   line-height: 26px;
 }
+
+.form__note {
+  display: none;
+}
+
+
+@media (min-width: 768px) {
+  .form__note {
+    display: block;
+  }
+
+  .form__footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
