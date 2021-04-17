@@ -3,6 +3,15 @@
   border: none;
   background-color: hsla(203, 47, 66, 100%);
   font-weight: 700;
-  color: white;
+  color: hsla(0, 0, 100, 1);
   padding: 17px 32px 16px 32px;
+}
+
+.button:hover {
+  background-color: hsla(203, 42, 58, 100%);
+}
+
+.button:active {
+  background-color: hsla(202, 44, 54, 100%);
+  color: hsla(0, 0, 100, 0.3);
 }

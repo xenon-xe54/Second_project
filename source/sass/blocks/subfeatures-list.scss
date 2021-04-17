@@ -7,3 +7,19 @@
   padding-bottom: 10px;
   list-style: none;
 }
+
+@media (min-width: 768px) {
+  .subfeatures-list {
+    padding: 0;
+    display: grid;
+    grid-template-columns: 256px 256px 256px;
+    grid-template-rows: minmax(330px, max-content);
+  }
+}
+
+@media (min-width: 1200px) {
+  .subfeatures-list {
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: minmax(256px, max-content);
+  }
+}

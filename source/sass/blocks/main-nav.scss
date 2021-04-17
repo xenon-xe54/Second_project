@@ -46,6 +46,27 @@
     text-decoration: none;
     box-shadow: none;
   }
+
+  .main-nav__item a:hover,
+  .main-nav__item a:focus {
+    color: hsla(203, 47, 66, 1);
+  }
+
+  .main-nav__item a:active {
+    color: hsla(0, 0, 0, 0.3);
+  }
+
+  .main-nav__item a:not([href]) {
+    color: hsla(23, 15, 40, 1);
+  }
+
+  .main-nav__item a:not([href]):hover {
+    color: hsla(23, 18, 32, 1);
+  }
+
+  .main-nav__item a:not([href]):active {
+    color: hsla(23, 15, 40, 0.3);
+  }
 }
 
 @media (min-width: 1200px) {
