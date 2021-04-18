@@ -30,6 +30,10 @@
     grid-template-columns: minmax(256px, max-content) minmax(256px, max-content) minmax(256px, max-content);
     grid-template-rows: minmax(256px, max-content) minmax(256px, max-content) minmax(256px, max-content);
   }
+
+  .features-list__item--illustrated {
+    display: grid;
+  }
 }
 
 @media (min-width: 1200px) {
