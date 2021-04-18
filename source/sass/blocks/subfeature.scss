@@ -1,8 +1,8 @@
-.subfeatures-item {
+.subfeature {
   background-color: white;
 }
 
-.subfeatures-item__title {
+.subfeature__title {
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
@@ -12,7 +12,7 @@
   padding-bottom: 20px;
 }
 
-.subfeatures-item__description {
+.subfeature__description {
   margin: 0;
   padding-left: 70px;
   padding-right: 40px;
@@ -20,7 +20,7 @@
 }
 
 @media (min-width: 768px) {
-  .subfeatures-item {
+  .subfeature {
     padding-top: 160px;
   }
 }
