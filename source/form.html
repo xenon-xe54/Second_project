@@ -29,8 +29,8 @@
     <p class="main-page__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
       достопримечательностях</p>
     <form class="form" action="https://echo.htmlacademy.ru" method="get">
-      <div class="form__wrapper">
-        <fieldset class="form__part part-form">
+      <div class="form__wrapper form__name">
+        <fieldset class="form__part part-form part-form__name">
           <legend class="part-form__title">Представьтесь:</legend>
           <ul class="part-form__list">
             <li class="part-form__item part-form__name">
@@ -48,10 +48,10 @@
           </ul>
         </fieldset>
       </div>
-      <div class="form__wrapper">
+      <div class="form__wrapper form__contacts">
         <fieldset class="form__part part-form">
           <legend class="part-form__title">Контактная информация:</legend>
-          <ul class="part-form__list">
+          <ul class="part-form__list part-form__contacts">
             <li class="part-form__item">
               <label for="mobile-number">Контактный телефон*:</label>
               <div class="part-form__data">
@@ -69,8 +69,8 @@
           </ul>
         </fieldset>
       </div>
-      <div class="form__wrapper">
-        <fieldset class="form__part part-form">
+      <div class="form__wrapper form__feeling">
+        <fieldset class="form__part part-form part-form__feeling">
           <legend class="part-form__title">Ваше общеее впечатление:</legend>
           <ul class="part-form__list">
             <li class="part-form__item part-form__control-wrapper">
@@ -89,10 +89,10 @@
           </ul>
         </fieldset>
       </div>
-      <div class="form__wrapper">
+      <div class="form__wrapper form__attractions">
         <fieldset class="form__part part-form">
           <legend class="part-form__title">Посещённые достопримечательности:</legend>
-          <ul class="part-form__list">
+          <ul class="part-form__list part-form__attractions">
             <li class="part-form__item part-form__control-wrapper">
               <input class="page__a11y-hidden part-form__checkbox" type="checkbox" name="attractions"
                 value="evil-bridge" id="evil-bridge" checked>
@@ -116,7 +116,7 @@
           </ul>
         </fieldset>
       </div>
-      <div class="form__wrapper">
+      <div class="form__wrapper form__emotions">
         <fieldset class="form__part part-form">
           <legend class="part-form__title">Опишите свои эмоции:</legend>
           <textarea name="full-review" id="full-review" cols="26" rows="5"
@@ -132,23 +132,25 @@
   <footer class="main-footer">
     <section class="footer-contacts">
       <h2 class="page__a11y-hidden">Контакты</h2>
-      <a class="footer-contacts__hashtag" href="#" class="contact-name">#VISITSEDONA</a>
+
+      <a href="#" class="footer-contacts__hashtag">#VISITSEDONA</a>
+
     </section>
     <section class="footer-social">
       <h2 class="page__a11y-hidden">Седона в социальных сетях</h2>
       <ul class="footer-social__list">
         <li>
-          <a class="footer-social__item" href="https://twitter.com/">
+          <a class="footer-social__item button" href="https://twitter.com/">
             <span class="page__a11y-hidden">В твиттере</span>
           </a>
         </li>
         <li>
-          <a class="footer-social__item" href="https://www.facebook.com/">
+          <a class="footer-social__item button" href="https://www.facebook.com/">
             <span class="page__a11y-hidden">В фэйсбуке</span>
           </a>
         </li>
         <li>
-          <a class="footer-social__item" href="https://www.youtube.com/">
+          <a class="footer-social__item button" href="https://www.youtube.com/">
             <span class="page__a11y-hidden">В ютубе</span>
           </a>
         </li>

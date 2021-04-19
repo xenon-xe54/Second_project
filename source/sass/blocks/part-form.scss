@@ -9,6 +9,7 @@
   line-height: 26px;
   padding-top: 20px;
   padding-bottom: 20px;
+  width: 100%;
 }
 
 .part-form__list {
@@ -99,7 +100,7 @@
 .part-form textarea {
   border: none;
   background-color: hsla(0, 0, 95, 100%);
-  width: 240px;
+  width: 70%;
   height: 120px;
   font-size: 18px;
   line-height: 26px;
@@ -107,4 +108,83 @@
   text-transform: none;
   padding: 20px;
   margin-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+  .part-form__title::before,
+  .part-form__title::after {
+    content: "";
+    flex-grow: 1;
+    flex-shrink: 0;
+    height: 1px;
+    background: hsla(0, 0, 86, 1);
+  }
+
+  .part-form__title::before {
+    margin-right: 30px;
+  }
+
+  .part-form__title::after {
+    margin-left: 30px;
+  }
+
+  .part-form__title {
+    display: flex;
+    align-items: center;
+  }
+
+  .part-form__name .part-form__title,
+  .part-form__feeling .part-form__title {
+    display: block;
+  }
+
+  .part-form__name .part-form__title::before,
+  .part-form__feeling .part-form__title::before,
+  .part-form__name .part-form__title::after,
+  .part-form__feeling .part-form__title::after {
+    display: none;
+  }
+
+  .part-form__attractions {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .part-form__attractions .part-form__item {
+    width: 50%;
+  }
+
+  .part-form textarea {
+    width: 85%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .part-form__contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .part-form__contacts .part-form__item {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+  }
+
+  .part-form__attractions .part-form__item {
+    width: 25%;
+  }
+
+  .part-form__data {
+    width: 67%;
+  }
+
+  .part-form__contacts .part-form__item:nth-child(2n) {
+    justify-self: left;
+  }
+
+  .part-form textarea {
+    width: 77%;
+  }
 }

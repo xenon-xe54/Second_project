@@ -1,9 +1,19 @@
+.form {
+  width: 100%;
+}
+
 .form__part {
   margin: 0;
+  width: 100%;
 }
 
 .form__wrapper {
   border-top: hsla(0, 0, 90, 100%) solid 1px;
+  width: 100%;
+}
+
+.form__wrapper:last-child {
+  border: none;
 }
 
 .form__button {
@@ -18,6 +28,25 @@
 
 
 @media (min-width: 768px) {
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__wrapper {
+    border: none;
+  }
+
+  .form__name {
+    width: 50%;
+  }
+
+  .form__feeling {
+    width: 50%;
+    order: -1;
+  }
+
+
   .form__note {
     display: block;
   }
