@@ -1,3 +1,8 @@
+.volume {
+  width: 100%;
+  height: 45px;
+}
+
 .volume__scale-bar {
   position: absolute;
   width: 235px;
@@ -21,4 +26,22 @@
   background-color: white;
   top: -5px;
   left: 20%;
+}
+
+@media (min-width: 768px) {
+  .volume {
+    height: 93px;
+  }
+
+  .volume__scale-bar {
+    width: 389px;
+    top: 45px;
+    left: 93px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .volume__scale-bar {
+    width: 540px;
+  }
 }

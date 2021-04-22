@@ -14,3 +14,9 @@
   margin-right: 20px;
   padding: 2px;
 }
+
+@media (min-width: 768px) {
+  .main-page__title {
+    font-size: 30px;
+  }
+}

@@ -1,22 +1,44 @@
 .player-button {
-  width: 66px;
+  min-width: 66px;
   height: 66px;
   border: none;
   background-color: hsla(0, 0, 95, 1);
   margin: 0;
-  position: absolute;
-  top: 0;
 }
 
-
-.player-button__repeat {
-  left: 0;
+.player-button svg {
+  fill: hsla(204, 10, 40, 1);
 }
 
-.player-button__subtitles {
-  right: 66px;
+.player-button:hover svg {
+  fill: hsla(0, 0, 20, 1);
 }
 
-.player-button__fullscreen {
-  right: 0;
+.player-button:active svg {
+  fill: hsla(0, 0, 20, 0.3);
+}
+
+@media (min-width: 768px) {
+  .player-button__repeat {
+    order: -1;
+  }
+
+  .player-button {
+    height: 100%;
+    border: none;
+    background-color: hsla(0, 0, 0, 0.6);
+  }
+
+  .player-button svg {
+    fill: hsla(0, 0, 100, 1);
+  }
+
+  .player-button:hover svg,
+  .player-button:focus svg {
+    fill: hsla(0, 0, 100, 0.6);
+  }
+
+  .player-button:active svg {
+    fill: hsla(0, 0, 100, 0.3);
+  }
 }

@@ -10,3 +10,31 @@
   padding-top: 22px;
   padding-bottom: 22px;
 }
+
+@media (min-width: 768px) {
+  .photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    border: none;
+  }
+
+  .photo-gallery__item {
+    padding-top: 34px;
+    padding-bottom: 34px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 50%;
+    border: none;
+  }
+
+  .photo-gallery__item--top {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .photo-gallery__item {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
