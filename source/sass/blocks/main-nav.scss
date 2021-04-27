@@ -4,6 +4,15 @@
   grid-template-rows: 1fr 56px;
   grid-template-areas: "list" "logo";
   min-width: 320px;
+  position: relative;
+}
+
+.main-nav__toggle {
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  right: 20px;
+  bottom: 17px;
 }
 
 .main-nav__list {
