@@ -1,6 +1,9 @@
 .main-nav {
-  background-color: hsla(203, 47, 66, 100%);
-  width: 320px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 56px;
+  grid-template-areas: "list" "logo";
+  min-width: 320px;
 }
 
 .main-nav__list {
@@ -8,8 +11,29 @@
   margin-top: 0;
   margin-bottom: 0;
   list-style: none;
+  background-color: hsla(203, 47, 66, 100%);
+  grid-area: list;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "item1" "item2" "item3" "item4";
 }
 
+.main-nav__item--first {
+  grid-area: item1;
+}
+
+.main-nav__item--second {
+  grid-area: item2;
+}
+
+.main-nav__item--third {
+  grid-area: item3;
+}
+
+.main-nav__item--fourth {
+  grid-area: item4;
+}
 
 .main-nav__item a {
   display: block;
@@ -23,23 +47,33 @@
 }
 
 .main-nav__logo {
-  position: absolute;
-  top: 0;
+  grid-area: logo;
+  display: flex;
+  justify-content: center;
 }
 
 @media (min-width: 768px) {
   .main-nav {
-    background-color: white;
-    width: 768px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: none;
+    grid-template-areas: none;
+    min-width: 100%;
+    height: 56px;
   }
 
   .main-nav__list {
-    display: flex;
+    grid-template-areas: "item1 item2 . item3 item4";
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: max-content;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: white;
   }
 
   .main-nav__item a {
     width: 153px;
-    height: 56px;
     color: black;
     font-size: 14px;
     line-height: 26px;
@@ -66,6 +100,14 @@
 
   .main-nav__item a:not([href]):active {
     color: hsla(23, 15, 40, 0.3);
+  }
+
+  .main-nav__logo {
+    position: inherit;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
   }
 }
 
