@@ -1,3 +1,8 @@
 .location__wrapper {
   margin-bottom: 10px;
 }
+
+.location__light-map {
+  width: 100%;
+  object-fit: cover;
+}

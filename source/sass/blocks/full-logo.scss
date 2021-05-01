@@ -6,11 +6,12 @@
   align-items: center;
   justify-content: center;
   background-image: url("../../img/header-mask.svg"), url("../../img/background-header.jpg");
-  background-color: hsla(203, 47, 66, 100%);
-  background-position: 0 332px, 0 0;
+  background-color: #80b2d1;
+  background-position: center bottom, center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 1200px 57px, 320px;
 }
+
 
 .full-logo__logo-image {
   width: 320px;
@@ -21,8 +22,9 @@
   justify-content: center;
   background-image: url("../../img/header-mask.svg"), url("../../img/background-header-inner.jpg");
   background-color: hsla(203, 47, 66, 100%);
-  background-position: 0 101px, 0 0;
+  background-position: center bottom, center;
   background-repeat: no-repeat;
+  background-size: 1200px 57px, 320px;
 }
 
 @media (min-resolution: 2dppx) {
@@ -35,13 +37,13 @@
   .full-logo {
     width: 768px;
     height: 518px;
-    background-image: url("../../img/header-mask-tablet.svg"), url("../../img/background-header-tablet.jpg");
-    background-position: 0 461px, 0 0;
+    background-image: url("../../img/header-mask.svg"), url("../../img/background-header-tablet.jpg");
+    background-size: 1200px 57px, 768px;
   }
 
   @media (min-resolution: 2dppx) {
     .full-logo {
-      background-image: url("../../img/header-mask-tablet.svg"), url("../../img/background-header-tablet@2x.jpg");
+      background-image: url("../../img/header-mask.svg"), url("../../img/background-header-tablet@2x.jpg");
     }
   }
 
@@ -54,12 +56,13 @@
 @media (min-width: 1200px) {
   .full-logo {
     width: 1200px;
-    background-image: url("../../img/header-mask-desktop.svg"), url("../../img/background-header-desktop.jpg");
+    background-image: url("../../img/header-mask.svg"), url("../../img/background-header-desktop.jpg");
+    background-size: 1200px 57px, 1200px;
   }
 
   @media (min-resolution: 2dppx) {
     .full-logo {
-      background-image: url("../../img/header-mask-desktop.svg"), url("../../img/background-header-desktop@2x.jpg");
+      background-image: url("../../img/header-mask.svg"), url("../../img/background-header-desktop@2x.jpg");
     }
   }
 }
