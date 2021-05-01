@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <title>Седона: Главная</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon32.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/favicon180.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
@@ -20,13 +24,15 @@
       </ul>
       <a class="main-nav__logo">
         <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-light-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-light-tablet.svg">
           <img class="logo" src="img/logo-light.svg" alt="">
         </picture>
       </a>
     </nav>
     <div class="full-logo">
       <picture>
-        <img src="img/full-logo.svg" width="282" height="214" alt="Седона">
+        <img class="full-logo__image" src="img/full-logo.svg" width="282" height="214" alt="Седона">
       </picture>
     </div>
   </header>
@@ -47,9 +53,13 @@
             <p class="feature__description">Седона &mdash; не аттракцион для туристов, там течёт своя жизнь</p>
           </div>
           <picture>
-            <img class="feature__image" src="img/feature1.jpg" width="320" height="260" alt="Фото городка с флагами">
+            <source media="(min-width: 1200px)" srcset="img/feature1-desktop.jpg 1x, img/feature1-desktop@2x.jpg 2x"
+              width="800" height="256">
+            <source media="(min-width: 768px)" srcset="img/feature1-tablet.jpg 1x, img/feature1-tablet@2x.jpg 2x"
+              width="512" height="256">
+            <img class="feature__image" src="img/feature1.jpg" srcset="img/feature1@2x.jpg 2x" width="320" height="260"
+              alt="Фото городка с флагами">
           </picture>
-
           <ul class="subfeatures-list">
             <li class="subfeatures-list__item subfeature">
               <p class="subfeature__title">Жильё</p>
@@ -71,7 +81,12 @@
             <p class="feature__description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
           <picture>
-            <img class="feature__image" src="img/feature2.jpg" width="320" height="260" alt="Фото моста из камней">
+            <source media="(min-width: 1200px)" srcset="img/feature2-desktop.jpg 1x, img/feature2-desktop@2x.jpg 2x"
+              width="800" height="256">
+            <source media="(min-width: 768px)" srcset="img/feature2-tablet.jpg 1x, img/feature2-tablet@2x.jpg 2x"
+              width="512" height="256">
+            <img class="feature__image" src="img/feature2.jpg" srcset="img/feature2@2x.jpg 2x" width="320" height="260"
+              alt="Фото моста из камней">
           </picture>
 
         </li>
@@ -105,7 +120,12 @@
     <section class="location location__wrapper">
       <h2 class="page__a11y-hidden">Как до нас добраться?</h2>
       <picture>
-        <img class="location__light-map" src="img/light-map.jpg" width="320" height="350" alt="Расположение на карте">
+        <source media="(min-width: 1200px)" srcset="img/light-map-desktop.jpg 1x, img/light-map-desktop@2x.jpg 2x"
+          width="1200">
+        <source media="(min-width: 768px)" srcset="img/light-map-tablet.jpg 1x, img/light-map-tablet@2x.jpg 2x"
+          width="768">
+        <img class="location__light-map" src="img/light-map.jpg" srcset="img/light-map@2x.jpg 2x" width="320"
+          height="350" alt="Расположение на карте">
       </picture>
     </section>
   </main>

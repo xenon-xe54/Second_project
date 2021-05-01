@@ -9,6 +9,7 @@
   background-color: hsla(203, 47, 66, 100%);
   background-position: 0 332px, 0 0;
   background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .full-logo__logo-image {
@@ -23,3 +24,43 @@
   background-position: 0 101px, 0 0;
   background-repeat: no-repeat;
 }
+
+@media (min-resolution: 2dppx) {
+  .full-logo {
+    background-image: url("../../img/header-mask.svg"), url("../../img/background-header@2x.jpg");
+  }
+}
+
+@media (min-width: 768px) {
+  .full-logo {
+    width: 768px;
+    height: 518px;
+    background-image: url("../../img/header-mask-tablet.svg"), url("../../img/background-header-tablet.jpg");
+    background-position: 0 461px, 0 0;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .full-logo {
+      background-image: url("../../img/header-mask-tablet.svg"), url("../../img/background-header-tablet@2x.jpg");
+    }
+  }
+
+  .full-logo__image {
+    width: 460px;
+    height: 350px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .full-logo {
+    width: 1200px;
+    background-image: url("../../img/header-mask-desktop.svg"), url("../../img/background-header-desktop.jpg");
+  }
+
+  @media (min-resolution: 2dppx) {
+    .full-logo {
+      background-image: url("../../img/header-mask-desktop.svg"), url("../../img/background-header-desktop@2x.jpg");
+    }
+  }
+}
+
