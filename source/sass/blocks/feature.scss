@@ -25,7 +25,9 @@
 }
 
 .feature__image {
-  object-fit: none;
+  object-fit: cover;
+  display: block;
+  width: 100%;
 }
 
 .feature__first {
