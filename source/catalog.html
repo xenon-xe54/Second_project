@@ -24,12 +24,14 @@
       </ul>
       <a class="main-nav__logo">
         <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-light-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-light-tablet.svg">
           <img class="logo" src="img/logo-light.svg" alt="">
         </picture>
       </a>
     </nav>
     <div class="full-logo__logo-image">
-      <img src="img/inner-logo.svg" width="229" height="39" alt="Седона">
+      <img class="full-logo__image-inner" src="img/inner-logo.svg" width="229" height="39" alt="Седона">
     </div>
   </header>
   <main class="main-page">
@@ -41,8 +43,12 @@
       <article class="photo-gallery__item photo-gallery__item--top photo-card photo-card--top">
         <a href="">
           <picture>
-            <img class="photo-card__image" src="img/photos/road.jpg" width="280" height="280"
-              alt="Фото шоссе на закате">
+            <source media="(min-width: 1200px)"
+              srcset="img/photos/road-desktop.jpg 1x, img/photos/road-desktop@2x.jpg 2x" width="1200" height="400">
+            <source media="(min-width: 768px)" srcset="img/photos/road-tablet.jpg 1x, img/photos/road-tablet@2x.jpg 2x"
+              width="648" height="400">
+            <img class="photo-card__image" src="img/photos/road.jpg" srcset="img/photos/road@2x.jpg 2x" width="280"
+              height="280" alt="Фото шоссе на закате">
           </picture>
         </a>
         <h3 class="photo-card__name">неродные просторы</h3>
@@ -54,8 +60,12 @@
       <article class="photo-gallery__item photo-card">
         <a href="">
           <picture>
-            <img class="photo-card__image" src="img/photos/flower.jpg" width="280" height="280"
-              alt="Фото цветущего кактуса с жёлтыми и зелёными цветами">
+            <source media="(min-width: 1200px)"
+              srcset="img/photos/flower-desktop.jpg 1x, img/photos/flower-desktop@2x.jpg 2x" width="400" height="267">
+            <source media="(min-width: 768px)"
+              srcset="img/photos/flower-tablet.jpg 1x, img/photos/flower-tablet@2x.jpg 2x" width="324" height="267">
+            <img class="photo-card__image" src="img/photos/flower.jpg" srcset="img/photos/flower@2x.jpg 2x" width="280"
+              height="280" alt="Фото цветущего кактуса с жёлтыми и зелёными цветами">
           </picture>
         </a>
         <h3 class="photo-card__name">Местная растительность</h3>
@@ -67,8 +77,12 @@
       <article class="photo-gallery__item photo-card">
         <a href="">
           <picture>
-            <img class="photo-card__image" src="img/photos/forest.jpg" width="280" height="280"
-              alt="Фото серпантина в лесном массиве">
+            <source media="(min-width: 1200px)"
+              srcset="img/photos/forest-desktop.jpg 1x, img/photos/forest-desktop@2x.jpg 2x" width="400" height="267">
+            <source media="(min-width: 768px)"
+              srcset="img/photos/forest-tablet.jpg 1x, img/photos/forest-tablet@2x.jpg 2x" width="324" height="267">
+            <img class="photo-card__image" src="img/photos/forest.jpg" srcset="img/photos/forest@2x.jpg 2x" width="280"
+              height="280" alt="Фото серпантина в лесном массиве">
           </picture>
         </a>
         <h3 class="photo-card__name">Дорога на север</h3>
@@ -80,8 +94,12 @@
       <article class="photo-gallery__item photo-card">
         <a href="">
           <picture>
-            <img class="photo-card__image" src="img/photos/bridge.jpg" width="280" height="280"
-              alt="Фото моста дьявола">
+            <source media="(min-width: 1200px)"
+              srcset="img/photos/bridge-desktop.jpg 1x, img/photos/bridge-desktop@2x.jpg 2x" width="400" height="267">
+            <source media="(min-width: 768px)"
+              srcset="img/photos/bridge-tablet.jpg 1x, img/photos/bridge-tablet@2x.jpg 2x" width="324" height="267">
+            <img class="photo-card__image" src="img/photos/bridge.jpg" srcset="img/photos/bridge@2x.jpg 2x" width="280"
+              height="280" alt="Фото моста дьявола">
           </picture>
         </a>
         <h3 class="photo-card__name">Мост дьявола</h3>
@@ -98,7 +116,14 @@
       <h2 class="video-presentation__title page__a11y-hidden">Видеопрезентация</h2>
       <div class="player__content">
         <picture>
-          <img src="img/photos/present-video.jpg" alt="">
+          <source media="(min-width: 1200px)"
+            srcset="img/photos/present-video-desktop.jpg 1x, img/photos/present-video-desktop@2x.jpg 2x" width="800"
+            height="500">
+          <source media="(min-width: 768px)"
+            srcset="img/photos/present-video-tablet.jpg 1x, img/photos/present-video-tablet@2x.jpg 2x" width="648"
+            height="500">
+          <img src="img/photos/present-video.jpg" srcset="img/photos/present-video@2x.jpg 2x" width="320" height="200"
+            alt="">
         </picture>
       </div>
       <div class="player__controls">
