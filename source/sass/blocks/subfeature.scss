@@ -1,5 +1,7 @@
 .subfeature {
+  position: relative;
   background-color: white;
+  text-align: center;
 }
 
 .subfeature__title {
@@ -22,5 +24,13 @@
 @media (min-width: 768px) {
   .subfeature {
     padding-top: 160px;
+  }
+
+  .subfeature__title {
+    padding-left: 50px;
+  }
+
+  .subfeature__description {
+    padding-left: 50px;
   }
 }

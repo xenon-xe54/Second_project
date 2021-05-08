@@ -8,6 +8,12 @@
   list-style: none;
 }
 
+.subfeatures-list__item svg {
+  position: absolute;
+  left: 18px;
+  top: -4px;
+}
+
 @media (min-width: 768px) {
   .subfeatures-list {
     padding: 0;
@@ -15,11 +21,22 @@
     grid-template-columns: 256px 256px 256px;
     grid-template-rows: minmax(330px, max-content);
   }
+
+  .subfeatures-list__item svg {
+    width: 75px;
+    height: 72px;
+    left: 93px;
+    top: 49px;
+  }
 }
 
 @media (min-width: 1200px) {
   .subfeatures-list {
     grid-template-columns: 400px 400px 400px;
     grid-template-rows: minmax(256px, max-content);
+  }
+
+  .subfeatures-list__item svg {
+    left: 166px;
   }
 }
