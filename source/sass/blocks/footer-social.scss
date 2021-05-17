@@ -21,3 +21,11 @@
   justify-content: center;
   align-items: center;
 }
+
+.footer-social__item svg {
+  fill: hsla(0, 0, 100, 1);
+}
+
+.footer-social__item:active svg {
+  fill: hsla(0, 0, 100, 0.3);
+}

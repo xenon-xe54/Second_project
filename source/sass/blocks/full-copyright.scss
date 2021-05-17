@@ -1,1 +1,7 @@
-//comment
+.full-copyright:hover svg {
+  fill: hsla(203, 47, 66, 1);
+}
+
+.full-copyright:active svg {
+  fill: hsla(0, 0, 0, 0.3);
+}

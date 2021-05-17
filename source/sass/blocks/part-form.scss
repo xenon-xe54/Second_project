@@ -43,11 +43,27 @@
   padding-left: 22px;
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color: hsla(0, 0, 95, 100%);
+  background-color: hsla(0, 0, 95, 1);
   color: black;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+}
+
+.part-form__item:hover input[type="text"],
+.part-form__item:hover input[type="tel"],
+.part-form__item:hover input[type="email"] {
+  background-color: hsla(0, 0, 90, 1);
+}
+
+.part-form__item input[type="text"]:focus,
+.part-form__item input[type="tel"]:focus,
+.part-form__item input[type="email"]:focus {
+  padding-left: 18px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  border: hsla(0, 0, 90, 1) 4px solid;
+  background-color: hsla(0, 0, 100, 1);
 }
 
 .part-form__button {
