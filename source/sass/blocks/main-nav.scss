@@ -81,6 +81,7 @@
     background-color: white;
   }
 
+
   .main-nav__item a {
     width: 153px;
     color: black;
@@ -88,6 +89,9 @@
     line-height: 26px;
     text-decoration: none;
     box-shadow: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .main-nav__item a:hover,
@@ -117,6 +121,7 @@
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 2;
+    margin-bottom: -28px;
   }
 }
 
@@ -127,5 +132,9 @@
 
   .main-nav__item a {
     width: 239px;
+  }
+
+  .main-nav__logo {
+    margin-bottom: -41px;
   }
 }

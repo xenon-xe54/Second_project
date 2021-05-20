@@ -14,6 +14,7 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: min-content 1fr min-content;
+  background-color: white;
 }
 
 @media (min-width: 768px) {
@@ -23,7 +24,12 @@
 }
 
 @media (min-width: 1200px) {
+  .page {
+    background-color: hsla(0, 0, 95, 1);
+  }
+
   .page__body {
+    box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
     width: 1200px;
   }
 }
