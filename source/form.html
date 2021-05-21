@@ -16,15 +16,15 @@
 
 <body class="page__body page__wrapper">
   <header class="main-header">
-    <nav class="main-header__navigation main-nav">
-      <button class="main-nav__toggle" type="button" hidden>Открыть меню</button>
+    <nav class="main-header__navigation main-nav main-nav--opened main-nav--no-js">
+      <button class="main-nav__toggle" type="button"></button>
       <ul class="main-nav__list">
-        <li class="main-nav__item main-nav__item--first"><a href="index.html">Главная</a></li>
-        <li class="main-nav__item main-nav__item--second"><a href="catalog.html">Фото и видео</a></li>
-        <li class="main-nav__item main-nav__item--third"><a>Форма Отзыва</a></li>
-        <li class="main-nav__item main-nav__item--fourth"><a href="https://htmlacademy.ru/">HTML ACADEMY</a></li>
+        <li class="main-nav__item"><a href="index.html">Главная</a></li>
+        <li class="main-nav__item"><a href="catalog.html">Фото и видео</a></li>
+        <li class="main-nav__item"><a>Форма Отзыва</a></li>
+        <li class="main-nav__item"><a href="https://htmlacademy.ru/">HTML ACADEMY</a></li>
       </ul>
-      <a class="main-nav__logo">
+      <a href="index.html" class="main-nav__logo">
         <picture>
           <source media="(min-width: 1200px)" srcset="img/logo-light-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-light-tablet.svg">
@@ -32,18 +32,19 @@
         </picture>
       </a>
     </nav>
-    <div class="full-logo__logo-image">
+    <div class=" full-logo full-logo--inner">
       <img class="full-logo__image-inner" src="img/inner-logo.svg" width="229" height="39" alt="Седона">
     </div>
   </header>
-  <main class="main-page">
-    <h1 class="main-page__title">Оставьте свой отзыв</h1>
-    <p class="main-page__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
+  <main class="main-page main-page--inner">
+    <h1 class="main-page__title main-page__title--inner">Оставьте свой отзыв</h1>
+    <p class="main-page__description main-page__description--inner">Помогите нашим отелям стать лучше! оставьте отзыв о
+      них, а также о посещенных вами
       достопримечательностях</p>
     <form class="form" action="https://echo.htmlacademy.ru" method="get">
       <div class="form__wrapper form__name">
-        <fieldset class="form__part part-form part-form__name">
-          <legend class="part-form__title">Представьтесь:</legend>
+        <fieldset class="form__part part-form part-form--name">
+          <legend class="part-form__title">Представьтесь: </legend>
           <ul class="part-form__list">
             <li class="part-form__item part-form__name">
               <label for="tourist-first-name">Имя*:</label>
@@ -65,25 +66,25 @@
           <legend class="part-form__title">Контактная информация:</legend>
           <ul class="part-form__list part-form__contacts">
             <li class="part-form__item">
-              <label for="mobile-number">Контактный телефон*:</label>
+              <label for="mobile-number"><span>Контактный</span> телефон*:</label>
               <div class="part-form__data">
                 <input type="tel" name="mobile-number" id="mobile-number" placeholder="Введите телефон" required>
-                <button class="part-form__button phone-button button" type="button"></button>
+                <button class="part-form__button part-form__button--phone button" type="button"></button>
               </div>
             </li>
             <li class="part-form__item">
-              <label for="email">Электронная почта*:</label>
+              <label for="email">Электронная почта*:</label>
               <div class="part-form__data">
                 <input type="email" name="email" id="email" placeholder="Введите e-mail" required>
-                <button class="part-form__button mail-button button" type="button"></button>
+                <button class="part-form__button part-form__button--mail button" type="button"></button>
               </div>
             </li>
           </ul>
         </fieldset>
       </div>
       <div class="form__wrapper form__feeling">
-        <fieldset class="form__part part-form part-form__feeling">
-          <legend class="part-form__title">Ваше общеее впечатление:</legend>
+        <fieldset class="form__part part-form part-form--feeling">
+          <legend class="part-form__title">Ваше общее впечатление:</legend>
           <ul class="part-form__list">
             <li class="part-form__item part-form__control-wrapper">
               <input class="page__a11y-hidden part-form__radio-button" type="radio" name="feeling" id="feeling-good"
@@ -102,18 +103,18 @@
         </fieldset>
       </div>
       <div class="form__wrapper form__attractions">
-        <fieldset class="form__part part-form">
-          <legend class="part-form__title">Посещённые достопримечательности:</legend>
+        <fieldset class="form__part part-form part-form--attractions">
+          <legend class="part-form__title">Посещённые   достопримечательности:</legend>
           <ul class="part-form__list part-form__attractions">
             <li class="part-form__item part-form__control-wrapper">
               <input class="page__a11y-hidden part-form__checkbox" type="checkbox" name="attractions"
                 value="evil-bridge" id="evil-bridge" checked>
-              <label class="part-form__checkbox-label checkbox" for="evil-bridge">Мост дьявола</label>
+              <label class="part-form__checkbox-label checkbox" for="evil-bridge">Мост Дьявола</label>
             </li>
             <li class="part-form__item part-form__control-wrapper">
               <input class="page__a11y-hidden part-form__checkbox" type="checkbox" name="attractions"
                 value="mountain-bell" id="mountain-bell" checked>
-              <label class="part-form__checkbox-label checkbox" for="mountain-bell">Гора-колокол</label>
+              <label class="part-form__checkbox-label checkbox" for="mountain-bell">Гора-Колокол</label>
             </li>
             <li class="part-form__item part-form__control-wrapper">
               <input class="page__a11y-hidden part-form__checkbox" type="checkbox" name="attractions" value="slide-park"
@@ -129,8 +130,8 @@
         </fieldset>
       </div>
       <div class="form__wrapper form__emotions">
-        <fieldset class="form__part part-form">
-          <legend class="part-form__title">Опишите свои эмоции:</legend>
+        <fieldset class="form__part part-form part-form--emotions">
+          <legend class="part-form__title">Опишите свои эмоции:</legend>
           <textarea name="full-review" id="full-review" cols="26" rows="5"
             placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
@@ -139,7 +140,22 @@
         <button class="form__button button" type="submit">Отправить отзыв</button>
         <span class="form__note">* — обязательные поля</span>
       </div>
+      <div class="popup error-popup" hidden>
+        <h3 class="popup__title">ЧТО-ТО ПОШЛО НЕ ТАК!</h3>
+        <p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="error-popup__button popup__button button">OK</button>
+      </div>
+      <div class="popup review-popup" hidden>
+        <h3 class="popup__title ">Ваш отзыв отправлен!</h3>
+        <p class="popup__text review-popup__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее
+          время мы опубликуем его
+          на сайте.</p>
+        <div>
+          <button class="review-popup__button popup__button button">ЗАкРЫТЬ ОКНО</button>
+        </div>
+      </div>
     </form>
+
   </main>
   <footer class="main-footer">
     <section class="footer-contacts">
@@ -192,6 +208,7 @@
       </span>
     </p>
   </footer>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

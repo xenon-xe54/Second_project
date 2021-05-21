@@ -1,27 +1,33 @@
 .feature {
-  padding-top: 30px;
+  padding-bottom: 1px;
+}
+
+.feature__wrapper {
+  padding-top: 26px;
 }
 
 .feature__title {
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
-  margin-top: 0;
   position: relative;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .feature__title::before {
   content: "— №"  counter(count)  " —";
   position: absolute;
   font-weight: 400;
-  top: 70px;
-  left: 126px;
+  top: 34px;
+  left: 135px;
+  font-size: 14px;
   width: max-content;
 }
 
 .feature__description {
-  margin-bottom: 0;
-  padding-top: 70px;
+  margin-bottom: 38px;
+  padding-top: 35px;
 }
 
 .feature__image {
@@ -30,24 +36,17 @@
   width: 100%;
 }
 
-.feature__first {
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 2;
-}
-
-.feature__second {
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 3;
-}
-
 
 @media (min-width: 768px) {
   .feature {
     padding-top: 0;
+  }
+
+  .feature__title {
+    padding-right: 41px;
+    padding-left: 40px;
+    font-size: 21px;
+    line-height: 26px;
   }
 
   .feature__wrapper {
@@ -57,29 +56,20 @@
   }
 
   .feature__image {
-    height: 256px;
+    height: 100%;
   }
 
   .feature__title::before {
-    left: 100px;
+    top: 62px;
+    left: 93px;
   }
 
 
   .feature__description {
     margin-bottom: 0;
-    padding-top: 80px;
-  }
-
-  .feature__first {
-    grid-template-columns: minmax(256px, max-content) minmax(512px, max-content);
-  }
-
-  .feature__second {
-    grid-template-columns: minmax(512px, max-content) minmax(256px, max-content);
-  }
-
-  .feature__second picture {
-    order: -1;
+    padding-top: 44px;
+    padding-left: 22px;
+    padding-right: 18px;
   }
 }
 
@@ -90,15 +80,17 @@
     padding-right: 40px;
   }
 
-  .feature__first {
-    grid-template-columns: minmax(400px, max-content) minmax(800px, max-content);
-  }
-
-  .feature__second {
-    grid-template-columns: minmax(800px, max-content) minmax(400px, max-content);
+  .feature__title {
+    padding-right: 58px;
+    padding-left: 62px;
   }
 
   .feature__title::before {
-    left: 135px;
+    top: 61px;
+    left: 140px;
+  }
+
+  .feature__description {
+    padding-top: 42px;
   }
 }

@@ -8,7 +8,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 150px;
+  gap: 6px;
   padding: 0;
 }
 
@@ -28,4 +28,11 @@
 
 .footer-social__item:active svg {
   fill: hsla(0, 0, 100, 0.3);
+}
+
+@media (min-width: 768px) {
+  .footer-social {
+    margin-left: -10px;
+    margin-top: 6px;
+  }
 }

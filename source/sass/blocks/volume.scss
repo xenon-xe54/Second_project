@@ -15,22 +15,27 @@
 .volume__scale-active {
   width: 20%;
   height: 100%;
-  background-color: hsla(0, 0, 100, 0.2);
+  background-color: transparent;
 }
 
 .volume__toggle {
   position: absolute;
-  width: 13px;
-  height: 13px;
+  width: 9px;
+  height: 9px;
   border-radius: 50%;
-  background-color: white;
-  top: -5px;
-  left: 20%;
+  background-color: #ffffff;
+  top: -2px;
+  left: 15%;
 }
 
 @media (min-width: 768px) {
   .volume {
     height: 93px;
+  }
+
+  .volume__toggle {
+    top: -3px;
+    left: 29%;
   }
 
   .volume__scale-bar {
@@ -43,5 +48,15 @@
 @media (min-width: 1200px) {
   .volume__scale-bar {
     width: 540px;
+  }
+
+  .volume__scale-active {
+    width: 21%;
+    height: 100%;
+    background-color: transparent;
+  }
+
+  .volume__toggle {
+    left: 21%;
   }
 }

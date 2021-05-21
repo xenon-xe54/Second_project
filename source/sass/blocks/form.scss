@@ -1,5 +1,8 @@
 .form {
   width: 100%;
+  padding-top: 3px;
+  padding-bottom: 40px;
+  position: relative;
 }
 
 .form__part {
@@ -12,14 +15,17 @@
   width: 100%;
 }
 
-.form__wrapper:last-child {
-  border: none;
+
+.form__footer {
+  border-top: none;
 }
 
 .form__button {
   text-transform: uppercase;
+  font-family: inherit;
   font-size: 21px;
   line-height: 26px;
+  width: 280px;
 }
 
 .form__note {
@@ -31,6 +37,8 @@
   .form {
     display: flex;
     flex-wrap: wrap;
+    padding-top: 38px;
+    padding-bottom: 62px;
   }
 
   .form__wrapper {
@@ -38,22 +46,94 @@
   }
 
   .form__name {
-    width: 50%;
+    width: 49%;
   }
 
   .form__feeling {
     width: 50%;
     order: -1;
+    border-right: hsla(0, 0, 86, 1) solid 1px;
   }
 
+  .form__contacts {
+    padding-top: 24px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .form__contacts .part-form__ешеду {
+    padding-bottom: 9px;
+  }
+
+  .form__contacts .part-form__data {
+    padding-bottom: 15px;
+  }
+
+  .form__attractions {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .form__emotions {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
 
   .form__note {
+    align-self: center;
     display: block;
+    padding: 5px 2px 0;
+    text-align: right;
   }
 
   .form__footer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 60px;
+  }
+
+  .form__button {
+    width: auto;
+    padding-right: 75px;
+    padding-left: 66px;
+    padding-top: 18px;
+    padding-bottom: 14px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .form {
+    padding-bottom: 66px;
+  }
+
+  .form__feeling {
+    padding-left: 63px;
+    padding-right: 9px;
+    width: 44%;
+  }
+
+  .form__name {
+    padding-left: 4px;
+    width: 47%;
+  }
+
+  .form__contacts {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+
+  .form__attractions {
+    padding-right: 41px;
+    padding-left: 41px;
+  }
+
+  .form__button {
+    padding-right: 147px;
+    padding-left: 150px;
+  }
+
+  .form__footer {
+    padding-left: 120px;
+    padding-right: 120px;
   }
 }

@@ -16,15 +16,15 @@
 
 <body class="page__body page__wrapper">
   <header class="main-header">
-    <nav class="main-header__navigation main-nav">
-      <button class="main-nav__toggle" type="button" hidden>Открыть меню</button>
+    <nav class="main-header__navigation main-nav main-nav--opened main-nav--no-js">
+      <button class="main-nav__toggle" type="button"></button>
       <ul class="main-nav__list">
-        <li class="main-nav__item main-nav__item--first"><a href="index.html">Главная</a></li>
-        <li class="main-nav__item main-nav__item--second"><a>Фото и видео</a></li>
-        <li class="main-nav__item main-nav__item--third"><a href="form.html">Форма Отзыва</a></li>
-        <li class="main-nav__item  main-nav__item--fourth"><a href="https://htmlacademy.ru/">HTML ACADEMY</a></li>
+        <li class="main-nav__item"><a href="index.html">Главная</a></li>
+        <li class="main-nav__item"><a>Фото и видео</a></li>
+        <li class="main-nav__item"><a href="form.html">Форма Отзыва</a></li>
+        <li class="main-nav__item"><a href="https://htmlacademy.ru/">HTML ACADEMY</a></li>
       </ul>
-      <a class="main-nav__logo">
+      <a href="index.html" class="main-nav__logo">
         <picture>
           <source media="(min-width: 1200px)" srcset="img/logo-light-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-light-tablet.svg">
@@ -32,13 +32,14 @@
         </picture>
       </a>
     </nav>
-    <div class="full-logo__logo-image">
+    <div class="full-logo full-logo--inner">
       <img class="full-logo__image-inner" src="img/inner-logo.svg" width="229" height="39" alt="Седона">
     </div>
   </header>
-  <main class="main-page">
-    <h1 class="main-page__title">Фото и видео</h1>
-    <p class="main-page__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
+  <main class="main-page main-page--inner">
+    <h1 class="main-page__title main-page__title--inner">Фото и видео</h1>
+    <p class="main-page__description main-page__description--inner">Не можете решиться на путешествие из-за курса?
+      Фотографии помогут вам забыть о
       политике и экономике.</p>
     <section class="photo-gallery">
       <h2 class="photo-gallery__title page__a11y-hidden">Фотографии</h2>
@@ -46,18 +47,16 @@
         <a href="">
           <picture>
             <source type="image/webp" media="(min-width: 1200px)"
-              srcset="img/photos/road-desktop.webp 1x, img/photos/road-desktop@2x.webp 2x" width="1200" height="400">
+              srcset="img/photos/road-desktop.webp 1x, img/photos/road-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)"
-              srcset="img/photos/road-tablet.webp 1x, img/photos/road-tablet@2x.webp 2x" width="648" height="400">
-            <source type="image/webp" srcset="img/photos/road.webp 1x, img/photos/road@2x.webp 2x" width="280"
-              height="280">
+              srcset="img/photos/road-tablet.webp 1x, img/photos/road-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/photos/road.webp 1x, img/photos/road@2x.webp 2x">
 
             <source media="(min-width: 1200px)"
-              srcset="img/photos/road-desktop.jpg 1x, img/photos/road-desktop@2x.jpg 2x" width="1200" height="400">
-            <source media="(min-width: 768px)" srcset="img/photos/road-tablet.jpg 1x, img/photos/road-tablet@2x.jpg 2x"
-              width="648" height="400">
-            <img class="photo-card__image" src="img/photos/road.jpg" srcset="img/photos/road@2x.jpg 2x" width="280"
-              height="280" alt="Фото шоссе на закате">
+              srcset="img/photos/road-desktop.jpg 1x, img/photos/road-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photos/road-tablet.jpg 1x, img/photos/road-tablet@2x.jpg 2x">
+            <img class="photo-card__image" src="img/photos/road.jpg" srcset="img/photos/road@2x.jpg 2x"
+              alt="Фото шоссе на закате">
           </picture>
         </a>
         <h3 class="photo-card__name">неродные просторы</h3>
@@ -70,18 +69,17 @@
         <a href="">
           <picture>
             <source type="image/webp" media="(min-width: 1200px)"
-              srcset="img/photos/flower-desktop.webp 1x, img/photos/flower-desktop@2x.webp 2x" width="400" height="267">
+              srcset="img/photos/flower-desktop.webp 1x, img/photos/flower-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)"
-              srcset="img/photos/flower-tablet.webp 1x, img/photos/flower-tablet@2x.webp 2x" width="324" height="267">
-            <source type="image/webp" srcset="img/photos/flower.webp 1x, img/photos/flower@2x.webp 2x" width="280"
-              height="280">
+              srcset="img/photos/flower-tablet.webp 1x, img/photos/flower-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/photos/flower.webp 1x, img/photos/flower@2x.webp 2x">
 
             <source media="(min-width: 1200px)"
-              srcset="img/photos/flower-desktop.jpg 1x, img/photos/flower-desktop@2x.jpg 2x" width="400" height="267">
+              srcset="img/photos/flower-desktop.jpg 1x, img/photos/flower-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)"
-              srcset="img/photos/flower-tablet.jpg 1x, img/photos/flower-tablet@2x.jpg 2x" width="324" height="267">
-            <img class="photo-card__image" src="img/photos/flower.jpg" srcset="img/photos/flower@2x.jpg 2x" width="280"
-              height="280" alt="Фото цветущего кактуса с жёлтыми и зелёными цветами">
+              srcset="img/photos/flower-tablet.jpg 1x, img/photos/flower-tablet@2x.jpg 2x">
+            <img class="photo-card__image" src="img/photos/flower.jpg" srcset="img/photos/flower@2x.jpg 2x"
+              alt="Фото цветущего кактуса с жёлтыми и зелёными цветами">
           </picture>
         </a>
         <h3 class="photo-card__name">Местная растительность</h3>
@@ -94,18 +92,17 @@
         <a href="">
           <picture>
             <source type="image/webp" media="(min-width: 1200px)"
-              srcset="img/photos/forest-desktop.webp 1x, img/photos/forest-desktop@2x.webp 2x" width="400" height="267">
+              srcset="img/photos/forest-desktop.webp 1x, img/photos/forest-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)"
-              srcset="img/photos/forest-tablet.webp 1x, img/photos/forest-tablet@2x.webp 2x" width="324" height="267">
-            <source type="image/webp" srcset="img/photos/forest.webp 1x, img/photos/forest@2x.webp 2x" width="280"
-              height="280">
+              srcset="img/photos/forest-tablet.webp 1x, img/photos/forest-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/photos/forest.webp 1x, img/photos/forest@2x.webp 2x">
 
             <source media="(min-width: 1200px)"
-              srcset="img/photos/forest-desktop.jpg 1x, img/photos/forest-desktop@2x.jpg 2x" width="400" height="267">
+              srcset="img/photos/forest-desktop.jpg 1x, img/photos/forest-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)"
-              srcset="img/photos/forest-tablet.jpg 1x, img/photos/forest-tablet@2x.jpg 2x" width="324" height="267">
-            <img class="photo-card__image" src="img/photos/forest.jpg" srcset="img/photos/forest@2x.jpg 2x" width="280"
-              height="280" alt="Фото серпантина в лесном массиве">
+              srcset="img/photos/forest-tablet.jpg 1x, img/photos/forest-tablet@2x.jpg 2x">
+            <img class="photo-card__image" src="img/photos/forest.jpg" srcset="img/photos/forest@2x.jpg 2x"
+              alt="Фото серпантина в лесном массиве">
           </picture>
         </a>
         <h3 class="photo-card__name">Дорога на север</h3>
@@ -118,19 +115,18 @@
         <a href="">
           <picture>
             <source type="image/webp" media="(min-width: 1200px)"
-              srcset="img/photos/bridge-desktop.webp 1x, img/photos/bridge-desktop@2x.webp 2x" width="400" height="267">
+              srcset="img/photos/bridge-desktop.webp 1x, img/photos/bridge-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)"
-              srcset="img/photos/bridge-tablet.webp 1x, img/photos/bridge-tablet@2x.webp 2x" width="324" height="267">
-            <source type="image/webp" srcset="img/photos/bridge.webp 1x, img/photos/bridge@2x.webp 2x" width="280"
-              height="280">
+              srcset="img/photos/bridge-tablet.webp 1x, img/photos/bridge-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/photos/bridge.webp 1x, img/photos/bridge@2x.webp 2x">
 
 
             <source media="(min-width: 1200px)"
-              srcset="img/photos/bridge-desktop.jpg 1x, img/photos/bridge-desktop@2x.jpg 2x" width="400" height="267">
+              srcset="img/photos/bridge-desktop.jpg 1x, img/photos/bridge-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)"
-              srcset="img/photos/bridge-tablet.jpg 1x, img/photos/bridge-tablet@2x.jpg 2x" width="324" height="267">
-            <img class="photo-card__image" src="img/photos/bridge.jpg" srcset="img/photos/bridge@2x.jpg 2x" width="280"
-              height="280" alt="Фото моста дьявола">
+              srcset="img/photos/bridge-tablet.jpg 1x, img/photos/bridge-tablet@2x.jpg 2x">
+            <img class="photo-card__image" src="img/photos/bridge.jpg" srcset="img/photos/bridge@2x.jpg 2x"
+              alt="Фото моста дьявола">
           </picture>
         </a>
         <h3 class="photo-card__name">Мост дьявола</h3>
@@ -140,30 +136,26 @@
         </footer>
       </article>
     </section>
-    <p class="main-page__title">Все еще сомневаетесь?</p>
-    <p class="main-page__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной
+    <p class="main-page__title main-page__title--inner main-page__subtitle">Все еще сомневаетесь?</p>
+    <p class="main-page__description main-page__subdescription">Смотрите видеопрезентацию и скорее за билетами, пока они
+      не подорожали в очередной
       раз!</p>
     <section class="video-presentation player page__wrapper">
       <h2 class="video-presentation__title page__a11y-hidden">Видеопрезентация</h2>
       <div class="player__content">
         <picture>
           <source type="image/webp" media="(min-width: 1200px)"
-            srcset="img/photos/present-video.webp 1x, img/photos/present-video@2x.webp 2x" width="800" height="500">
+            srcset="img/photos/present-video.webp 1x, img/photos/present-video@2x.webp 2x">
           <source type="image/webp" media="(min-width: 768px)"
-            srcset="img/photos/present-video-tablet.webp 1x, img/photos/present-video-tablet@2x.webp 2x" width="648"
-            height="500">
-          <source type="image/webp" srcset="img/photos/present-video.webp 1x, img/photos/present-video@2x.webp 2x"
-            width="320" height="200">
+            srcset="img/photos/present-video-tablet.webp 1x, img/photos/present-video-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/photos/present-video.webp 1x, img/photos/present-video@2x.webp 2x">
 
 
           <source media="(min-width: 1200px)"
-            srcset="img/photos/present-video-desktop.jpg 1x, img/photos/present-video-desktop@2x.jpg 2x" width="800"
-            height="500">
+            srcset="img/photos/present-video-desktop.jpg 1x, img/photos/present-video-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)"
-            srcset="img/photos/present-video-tablet.jpg 1x, img/photos/present-video-tablet@2x.jpg 2x" width="648"
-            height="500">
-          <img src="img/photos/present-video.jpg" srcset="img/photos/present-video@2x.jpg 2x" width="320" height="200"
-            alt="">
+            srcset="img/photos/present-video-tablet.jpg 1x, img/photos/present-video-tablet@2x.jpg 2x">
+          <img src="img/photos/present-video.jpg" srcset="img/photos/present-video@2x.jpg 2x" alt="">
         </picture>
       </div>
       <div class="player__controls">
@@ -173,25 +165,27 @@
             <div class="volume__toggle"></div>
           </div>
         </div>
-        <button class="player-button player-button__repeat" type="button">
-          <span class="page__a11y-hidden">Повтор</span>
-          <svg width="16" height="20">
-            <use xlink:href="img/stack.svg#icon-replay">
-          </svg>
-        </button>
-        <div class="player__options">
-          <button class="player-button player-button__subtitles" type="button">
-            <span class="page__a11y-hidden">Субтитры</span>
-            <svg width="32" height="20">
-              <use xlink:href="img/stack.svg#icon-subtitles">
+        <div class="player__buttons">
+          <button class="player-button" type="button">
+            <span class="page__a11y-hidden">Повтор</span>
+            <svg width="16" height="20">
+              <use xlink:href="img/stack.svg#icon-replay" />
             </svg>
           </button>
-          <button class="player-button player-button__fullscreen" type="button">
-            <span class="page__a11y-hidden">Полный экран</span>
-            <svg width="20" height="20">
-              <use xlink:href="img/stack.svg#icon-fullscreen">
-            </svg>
-          </button>
+          <div class="player__options">
+            <button class="player-button" type="button">
+              <span class="page__a11y-hidden">Субтитры</span>
+              <svg width="32" height="20">
+                <use xlink:href="img/stack.svg#icon-subtitles" />
+              </svg>
+            </button>
+            <button class="player-button" type="button">
+              <span class="page__a11y-hidden">Полный экран</span>
+              <svg width="20" height="20">
+                <use xlink:href="img/stack.svg#icon-fullscreen" />
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </section>
@@ -247,6 +241,7 @@
       </span>
     </p>
   </footer>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

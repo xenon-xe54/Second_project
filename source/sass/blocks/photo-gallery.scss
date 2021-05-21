@@ -1,14 +1,12 @@
 .photo-gallery {
   text-align: left;
   border-bottom: hsla(0, 0, 90, 100%) solid 1px;
+  margin-top: 36px;
 }
 
 .photo-gallery__item {
   border-top: hsla(0, 0, 90, 100%) solid 1px;
-  padding-right: 20px;
-  padding-left: 20px;
-  padding-top: 22px;
-  padding-bottom: 22px;
+  padding: 14px 20px 0;
 }
 
 @media (min-width: 768px) {
@@ -16,6 +14,9 @@
     display: flex;
     flex-wrap: wrap;
     border: none;
+    margin-top: 0;
+    margin-right: 60px;
+    margin-left: 60px;
   }
 
   .photo-gallery__item {
@@ -25,10 +26,15 @@
     padding-right: 0;
     width: 50%;
     border: none;
+    margin-bottom: 13px;
   }
 }
 
 @media (min-width: 1200px) {
+  .photo-gallery {
+    margin: 0;
+  }
+
   .photo-gallery__item {
     padding-top: 0;
     padding-bottom: 0;

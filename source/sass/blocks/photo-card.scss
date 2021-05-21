@@ -6,6 +6,7 @@
   width: 100%;
   height: 280px;
   padding-bottom: 9px;
+  padding-top: 8px;
   object-fit: cover;
   display: block;
 }
@@ -14,15 +15,15 @@
   font-size: 14px;
   line-height: 24px;
   font-weight: 700;
-  margin: 0;
+  margin-top: 2px;
+  margin-bottom: 0;
 }
 
 .photo-card__author {
   font-size: 14px;
   line-height: 24px;
   text-transform: none;
-  margin: 0;
-  margin-bottom: 15px;
+  margin: 0 0 12px;
 }
 
 .photo-card__likes {
@@ -41,19 +42,36 @@
   mask-image: url("../../img/stack.svg#icon-like");
   background-repeat: no-repeat;
   background-color: hsla(0, 0, 0, 0.3);
-  left: -32px;
+  left: -35px;
   top: -5px;
 }
 
 
 @media (min-width: 768px) {
+  .photo-card:not(.photo-card--top) {
+    height: 347px;
+    margin: 0;
+    padding: 0;
+  }
+
   .photo-card--top {
     width: 100%;
+    margin-bottom: 47px;
+  }
+
+  .photo-card--top .photo-card__name {
+    margin: -21px 0 0;
+    padding-right: 490px;
+    padding-left: 20px;
   }
 
   .photo-card__image {
-    height: 400px;
+    height: 267px;
     padding: 0;
+  }
+
+  .photo-card--top .photo-card__image {
+    height: 400px;
   }
 
   .photo-card .photo-card__footer,
@@ -61,13 +79,34 @@
     background-color: hsla(0, 0, 95, 1);
   }
 
+  .photo-card__name {
+    padding-left: 21px;
+    padding-top: 14px;
+  }
+
   .photo-card .photo-card__footer {
     display: flex;
     justify-content: space-between;
+    height: 40px;
+  }
+
+  .photo-card__author {
+    margin: 0 0 0;
+    padding-left: 20px;
+  }
+
+  .photo-card--top .photo-card__likes {
+    left: -20px;
   }
 
   .photo-card__likes {
-    left: -20px;
+    left: -32px;
+    margin-top: -11px;
+  }
+
+  .photo-card__likes::before {
+    left: -32px;
+    top: -2px;
   }
 }
 
@@ -75,14 +114,20 @@
   .photo-card {
     position: relative;
     width: 33.333%;
+    overflow: hidden;
+  }
+
+  .photo-card:not(.photo-card--top) {
+    height: 268px;
   }
 
   .photo-card--top {
     width: 100%;
+    margin-bottom: 0;
+    overflow: visible;
   }
 
-  .photo-card .photo-card__footer,
-  .photo-card .photo-card__name {
+  .photo-card .photo-card__footer {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -90,8 +135,28 @@
   }
 
   .photo-card .photo-card__name {
-    bottom: 39px;
+    position: absolute;
+    width: 100%;
+    background-color: hsla(0, 0, 0, 0.3);
+    bottom: 40px;
     color: white;
+  }
+
+  .photo-card__name {
+    padding-left: 20px;
+    padding-top: 14px;
+  }
+
+  .photo-card--top .photo-card__name {
+    padding-right: 0;
+    padding-left: 21px;
+    padding-top: 17px;
+    width: 98%;
+    margin-bottom: 0;
+  }
+
+  .photo-card--top .photo-card__footer {
+    margin-bottom: 0;
   }
 
   .photo-card__author,

@@ -1,8 +1,21 @@
-.location__wrapper {
+.location {
+  padding-top: 16px;
   margin-bottom: 10px;
 }
 
 .location__light-map {
   width: 100%;
   object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .location {
+    padding-top: 9px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .location {
+    padding-top: 17px;
+  }
 }

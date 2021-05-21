@@ -1,6 +1,6 @@
 .player-button {
-  min-width: 66px;
-  height: 66px;
+  min-width: 57px;
+  height: 69px;
   border: none;
   background-color: hsla(0, 0, 95, 1);
   margin: 0;
@@ -19,14 +19,12 @@
 }
 
 @media (min-width: 768px) {
-  .player-button__repeat {
-    order: -1;
-  }
-
   .player-button {
     height: 100%;
     border: none;
-    background-color: hsla(0, 0, 0, 0.6);
+    background: none;
+    min-width: 61px;
+    padding-left: 30px;
   }
 
   .player-button svg {

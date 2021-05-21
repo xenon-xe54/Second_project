@@ -1,6 +1,7 @@
 .player {
   position: relative;
   margin-bottom: 100px;
+  margin-top: 31px;
 }
 
 .player__controls {
@@ -10,19 +11,24 @@
   margin-left: 20px;
   width: 280px;
   height: 111px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .player__volume {
   background-color: hsla(0, 0, 0, 0.6);
 }
 
+.player__buttons {
+  display: flex;
+  justify-content: space-between;
+  background-color: hsla(0, 0, 95, 1);
+}
+
 @media (min-width: 768px) {
   .player {
     width: 648px;
     height: 500px;
+    margin-top: 81px;
+    margin-bottom: 40px;
   }
 
   .player__content {
@@ -43,28 +49,37 @@
     bottom: 0;
   }
 
+  .player__buttons {
+    margin-top: -58px;
+    background: none;
+  }
+
   .player__options {
     display: flex;
+    padding-right: 29px;
   }
 }
 
 @media (min-width: 1200px) {
   .player {
     width: 800px;
-    height: 683px;
+    height: 547px;
+    margin-top: 0;
+    padding-top: 36px;
   }
 
   .player__content {
     width: 800px;
-    height: 683px;
+    height: 500px;
   }
 
   .player__content img {
     width: 800px;
-    height: 683px;
+    height: 500px;
   }
 
   .player__controls {
     width: 800px;
+    bottom: 47px;
   }
 }

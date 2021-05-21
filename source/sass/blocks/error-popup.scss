@@ -1,0 +1,21 @@
+.error-popup {
+  bottom: 476px;
+}
+
+@media (min-width: 768px) {
+  .error-popup {
+    width: 280px;
+    bottom: 222px;
+    padding-top: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
+    left: 184px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .error-popup {
+    bottom: 112px;
+    left: 400px;
+  }
+}

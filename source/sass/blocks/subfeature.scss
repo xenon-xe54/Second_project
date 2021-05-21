@@ -1,7 +1,8 @@
 .subfeature {
   position: relative;
   background-color: white;
-  text-align: center;
+  text-align: left;
+  padding-top: 3px;
 }
 
 .subfeature svg {
@@ -15,7 +16,8 @@
   margin: 0;
   padding-left: 70px;
   padding-right: 40px;
-  padding-bottom: 20px;
+  padding-bottom: 16px;
+  text-align: left;
 }
 
 .subfeature__description {
@@ -28,13 +30,25 @@
 @media (min-width: 768px) {
   .subfeature {
     padding-top: 160px;
+    text-align: center;
   }
 
   .subfeature__title {
-    padding-left: 50px;
+    padding-left: 40px;
+    font-size: 21px;
+    text-align: center;
   }
 
   .subfeature__description {
-    padding-left: 50px;
+    padding-top: 5px;
+    padding-left: 31px;
+    padding-right: 32px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .subfeature__description {
+    padding-left: 54px;
+    padding-right: 55px;
   }
 }
