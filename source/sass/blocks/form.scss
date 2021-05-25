@@ -15,6 +15,9 @@
   width: 100%;
 }
 
+.form__emotions {
+  height: 272px;
+}
 
 .form__footer {
   border-top: none;
@@ -37,8 +40,8 @@
   .form {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 38px;
-    padding-bottom: 62px;
+    padding-top: 41px;
+    padding-bottom: 61px;
   }
 
   .form__wrapper {
@@ -77,6 +80,7 @@
   .form__emotions {
     padding-right: 40px;
     padding-left: 40px;
+    height: auto;
   }
 
   .form__note {
@@ -104,6 +108,7 @@
 @media (min-width: 1200px) {
   .form {
     padding-bottom: 66px;
+    padding-top: 41px;
   }
 
   .form__feeling {
