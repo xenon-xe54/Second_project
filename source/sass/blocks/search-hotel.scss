@@ -10,7 +10,7 @@
 }
 
 .search-hotel__motivate {
-  margin: 22px 28px 42px;
+  margin: 22px 28px 43px;
   line-height: 24px;
 }
 
@@ -22,6 +22,8 @@
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
+  padding-top: 14px;
+  padding-bottom: 17px;
 }
 
 @media (min-width: 768px) {
@@ -54,6 +56,8 @@
   .search-hotel__search-button {
     padding-left: 136px;
     padding-right: 136px;
+    padding-top: 15px;
+    padding-bottom: 16px;
   }
 }
 

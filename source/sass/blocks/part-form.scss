@@ -347,7 +347,7 @@
 
   .part-form--attractions .part-form__title {
     padding-top: 14px;
-    padding-bottom: 43px;
+    padding-bottom: 42px;
   }
 
   .part-form__attractions .part-form__item {
@@ -361,7 +361,7 @@
   .part-form textarea {
     box-sizing: border-box;
     margin-top: 45px;
-    margin-bottom: 57px;
+    margin-bottom: 53px;
     min-height: 160px;
     width: 94%;
     padding: 17px 20px;
@@ -372,6 +372,7 @@
   .part-form--name .part-form__title,
   .part-form--feeling .part-form__title {
     margin-left: 74px;
+    margin-right: auto;
   }
 
   .part-form--feeling .part-form__title {
@@ -422,14 +423,23 @@
 
   .part-form__attractions {
     display: grid;
-    grid-template-columns: minmax(260px, max-content) minmax(258px, max-content) minmax(238px, max-content) minmax(224px, max-content);
-    padding-left: 80px;
+    grid-template-columns: repeat(4, auto);
+    gap: 68px;
+    padding-left: 0;
+    padding-right: 0;
   }
+
+  .part-form--attractions {
+    box-sizing: border-box;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
 
   .part-form--attractions .part-form__title {
     padding-top: 7px;
     padding-bottom: 44px;
-    margin: 0 80px;
+    margin: 0;
     width: auto;
   }
 
@@ -443,9 +453,15 @@
     width: 100%;
   }
 
+  .part-form--emotions {
+    box-sizing: border-box;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
   .part-form--emotions .part-form__title {
     padding-top: 24px;
-    margin: 0 80px;
+    margin: 0;
     width: auto;
   }
 
@@ -467,6 +483,6 @@
     width: 960px;
     font-size: 16px;
     padding: 20px 11px 22px 20px;
-    margin-bottom: 57px;
+    margin-bottom: 53px;
   }
 }

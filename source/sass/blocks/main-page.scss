@@ -4,7 +4,7 @@
 }
 
 .main-page--inner {
-  margin-top: 13px;
+  margin-top: 3px;
   margin-bottom: 15px;
 }
 
@@ -21,18 +21,27 @@
   margin-bottom: 28px;
 }
 
+.main-page__title--form {
+  margin-top: 33px;
+}
+
 .main-page__description {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
-  margin-left: 20px;
-  margin-right: 20px;
-  // margin-top: 30px;
-  // padding: 2px;
+  margin-top: 33px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.main-page__subdescription--inner {
+  margin-top: 0;
 }
 
 .main-page__description--inner {
   margin-top: 26px;
+  margin-left: 20px;
+  margin-right: 19px;
 }
 
 @media (min-width: 768px) {
@@ -41,36 +50,66 @@
     padding-top: 10px;
   }
 
+  .main-page__title .first-break {
+    display: none;
+  }
+
   .main-page__title--inner {
     font-size: 30px;
+    padding-top: 35px;
+  }
+
+  .main-page__title--form {
+    padding-top: 26px;
+  }
+
+  .main-page__subtitle {
     padding-top: 25px;
   }
 
   .main-page__description {
     padding-bottom: 39px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   .main-page__description--inner {
-    margin-top: 35px;
+    margin-top: 32px;
     padding-left: 143px;
     padding-right: 143px;
     margin-bottom: 8px;
+  }
+
+  .main-page__subdescription--inner {
+    margin-left: 154px;
+    margin-right: 156px;
+    margin-top: 33px;
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
 }
 
 
 @media (min-width: 1200px) {
+  .main-page--catalog {
+    margin-top: 13px;
+  }
+
   .main-page__title {
     padding-top: 21px;
   }
 
+
   .main-page__title--inner {
-    padding-top: 77px;
+    padding-top: 65px;
+  }
+
+  .main-page__title--form {
+    padding-top: 78px;
   }
 
   .main-page__subtitle {
     padding-top: 27px;
-    padding-bottom: 5px;
   }
 
   .main-page__description {
@@ -78,8 +117,9 @@
   }
 
   .main-page__subdescription {
-    padding-right: 350px;
-    padding-left: 350px;
+    padding-right: 219px;
+    padding-left: 219px;
+    padding-bottom: 44px;
   }
 
   .main-page__description--inner {
