@@ -48,11 +48,11 @@
           <ul class="part-form__list">
             <li class="part-form__item part-form__name">
               <label for="tourist-first-name">Имя*:</label>
-              <input type="text" name="tourist-first-name" id="tourist-first-name" placeholder="Петр" required>
+              <input type="text" name="tourist-first-name" id="tourist-first-name" placeholder="Петр">
             </li>
             <li class="part-form__item part-form__name">
               <label for="tourist-last-name">Фамилия*:</label>
-              <input type="text" name="tourist-last-name" id="tourist-last-name" placeholder="Иванов" required>
+              <input type="text" name="tourist-last-name" id="tourist-last-name" placeholder="Иванов">
             </li>
             <li class="part-form__item part-form__name">
               <label for="tourist-middle-name">Отчество:</label>
@@ -68,14 +68,14 @@
             <li class="part-form__item">
               <label for="mobile-number"><span>Контактный</span> телефон*:</label>
               <div class="part-form__data">
-                <input type="tel" name="mobile-number" id="mobile-number" placeholder="Введите телефон" required>
+                <input type="tel" name="mobile-number" id="mobile-number" placeholder="Введите телефон">
                 <button class="part-form__button part-form__button--phone button" type="button"></button>
               </div>
             </li>
             <li class="part-form__item">
               <label for="email">Электронная почта*:</label>
               <div class="part-form__data">
-                <input type="email" name="email" id="email" placeholder="Введите e-mail" required>
+                <input type="email" name="email" id="email" placeholder="Введите e-mail">
                 <button class="part-form__button part-form__button--mail button" type="button"></button>
               </div>
             </li>
@@ -140,12 +140,12 @@
         <button class="form__button button" type="submit">Отправить отзыв</button>
         <span class="form__note">* — обязательные поля</span>
       </div>
-      <div class="popup error-popup" hidden>
+      <div class="error-popup popup popup--hidden">
         <h3 class="popup__title">ЧТО-ТО ПОШЛО НЕ ТАК!</h3>
         <p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
         <button class="error-popup__button popup__button button">OK</button>
       </div>
-      <div class="popup review-popup" hidden>
+      <div class="popup review-popup popup--hidden">
         <h3 class="popup__title ">Ваш отзыв отправлен!</h3>
         <p class="popup__text review-popup__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее
           время мы опубликуем его

@@ -23,7 +23,6 @@
 
 .part-form__name {
   display: flex;
-  // justify-items: center;
   flex-wrap: nowrap;
   padding: 10px 0;
   gap: 14px;
@@ -60,6 +59,11 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+}
+
+.part-form--error {
+  outline: tomato 4px dashed;
+  outline-offset: -4px;
 }
 
 .part-form__item input[type="text"]::placeholder,
@@ -222,7 +226,6 @@
   padding-bottom: 28px;
   margin-top: 5px;
   margin-bottom: 49px;
-  outline: none;
   resize: vertical;
 }
 
