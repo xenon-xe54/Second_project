@@ -27,6 +27,7 @@ navToggle.addEventListener('click', function () {
 
 
 
+
 form.addEventListener('submit', function (event) {
   if (!firstName.value || !lastName.value || !phoneNumber.value || !mail.value) {
     if (!firstName.value) { firstName.classList.add('part-form--error'); }
